@@ -96,7 +96,7 @@ file = open("attary.txt", 'r')
 for txt in file:
 	sz = len(txt)
 	txt = txt[0:sz-1]
-	txt_path = "path_to_dataset/txts/" + txt + ".txt"
+	txt_path = "path_to_dataset/" + txt + ".txt"
 	print(f"\t\tWorking with {txt_path}")
 	tcwc(txt, txt_path)
 file.close()
